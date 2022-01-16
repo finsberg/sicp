@@ -82,5 +82,19 @@
 ; Newtons method solve (f(y) = 0)
 
 (define (sqrt3 x)
-  (newton (lambda(y) (-x (square y)))
+  (newton (lambda(y) (- x (square y)))
           1))
+
+(define (newton f guess)
+  (define df (derivative f))
+  (fixed-point
+   (lambda(x) (- x (/ (f x) (df x))))
+   guess)
+  )
+
+(define (derivative f)
+  (define dx 0.000001)
+  (lambda(x)
+      (/ (- (f (+ x dx)) (f x))
+         dx)))
+  
