@@ -14,4 +14,4 @@ I will aslo use this as an opurtunity to learn [Racket](https://racket-lang.org)
 * [Sicp as podcast](http://cabezal.com/sicp/)
 * [Racket docs](https://docs.racket-lang.org)
 * https://github.com/ivanjovanovic/sicp
-
+* https://github.com/codereport/SICP-2020
